@@ -1,13 +1,13 @@
 /** @format */
 
 import "./App.css";
-import WeatherCard from "./WeatherCard";
+import Weather from "./Weather";
 import Footer from "./Footer";
 
 function App() {
 	return (
 		<div className="App">
-			<WeatherCard />
+			<Weather />
 
 			<Footer />
 		</div>

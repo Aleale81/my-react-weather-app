@@ -7,9 +7,9 @@ import WeatherInfo from "./WeatherInfo";
 import Forecast from "./Forecast";
 import axios from "axios";
 import Timestamp from "react-timestamp";
-import "./WeatherCard.css";
+import "./Weather.css";
 
-export default function WeatherCard() {
+export default function Weather() {
 	const [city, setCity] = useState("Amsterdam");
 	const [weather, setWeather] = useState({});
 	const [date, setDate] = useState(null);
@@ -34,7 +34,7 @@ export default function WeatherCard() {
 
 	axios.get(apiUrl).then(showWeather);
 	return (
-		<div className="WeatherCard afternoon">
+		<div className="Weather afternoon">
 			<div className="Today">
 				<Timestamp date={date} />
 			</div>
