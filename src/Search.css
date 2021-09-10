@@ -1,0 +1,29 @@
+/** @format */
+
+.Search .form {
+    margin-bottom: 10px;
+}
+
+.Search .form-control {
+    box-shadow: 2px 2px 2px rgb(153, 151, 151);
+    background: rgba(255, 255, 255, 0.8);
+    margin-left: 5px;
+}
+
+.Search .form-control:focus {
+    outline: none;
+}
+
+.Search .btn {
+    background: rgb(95, 99, 160);
+    border: 1px solid rgb(95, 99, 160);
+    color: rgba(255, 255, 255, 0.8);
+    box-shadow: 2px 2px 2px rgb(153, 151, 151);
+    transition: all 200ms ease-in-out;
+}
+
+.Search .btn:hover {
+    background: rgb(95, 99, 160);
+    border: 1px solid rgb(95, 99, 160);
+    cursor: pointer;
+}

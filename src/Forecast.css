@@ -1,0 +1,16 @@
+/** @format */
+
+.Forecast {
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    color: rgb(95, 99, 160);
+}
+
+.Forecast .forecast-date {
+    font-size: larger;
+    font-weight: bolder;
+    color: rgb(61, 71, 112);
+}
+
+.Forecast .forecast-temp-max {
+    font-weight: bold;
+}

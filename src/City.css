@@ -1,0 +1,25 @@
+/** @format */
+
+.City .city,
+.City .temp {
+    color: rgb(61, 71, 112);
+    font-size: 38px;
+    font-family: "Times New Roman", Times, serif;
+    font-weight: 700;
+}
+
+.City .city {
+    margin-left: 5px;
+}
+
+.City .temp {
+    display: inline;
+}
+
+.City .units {
+    position: relative;
+    top: -16px;
+    font-size: 14px;
+    font-family: "Times New Roman", Times, serif;
+    color: rgb(61, 71, 112);
+}
