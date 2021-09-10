@@ -1,17 +1,18 @@
 /** @format */
 
 import React, { useState } from "react";
-import Today from "./Today";
 import Search from "./Search";
 import City from "./City";
 import WeatherInfo from "./WeatherInfo";
 import Forecast from "./Forecast";
 import axios from "axios";
+import Timestamp from "react-timestamp";
 import "./WeatherCard.css";
 
 export default function WeatherCard() {
 	const [city, setCity] = useState("Amsterdam");
 	const [weather, setWeather] = useState({});
+	const [date, setDate] = useState(null);
 
 	function showWeather(response) {
 		setCity({
@@ -25,15 +26,18 @@ export default function WeatherCard() {
 			wind: Math.round(response.data.wind.speed * 3.6),
 			icon: response.data.weather[0].icon,
 		});
+		setDate(currentDate);
 	}
-
+	let currentDate = new Date();
 	let apiKey = `a1bed3af7d71b323ab4af9036fcd943d`;
 	let apiUrl = `http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
 
 	axios.get(apiUrl).then(showWeather);
 	return (
 		<div className="WeatherCard afternoon">
-			<Today day="Saturday" date={14} month="August" hour={15} minutes={47} />
+			<div className="Today">
+				<Timestamp date={date} />
+			</div>
 			<Search />
 			<City name={city.name} country={city.country} temperature={city.temp} />
 			<WeatherInfo
