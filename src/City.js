@@ -14,7 +14,10 @@ export default function City(props) {
 				</div>
 				<div className="col-5">
 					<h1 className="temp">{props.temperature}</h1>
-					<span className="units">°C|°F</span>
+					<span className="units">
+						{" "}
+						<a href=" ">°C</a> | <a href=" ">°F</a>{" "}
+					</span>
 				</div>
 			</div>
 		</div>

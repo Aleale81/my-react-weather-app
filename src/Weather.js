@@ -28,9 +28,11 @@ export default function Weather() {
 		});
 		setDate(currentDate);
 	}
+
 	let currentDate = new Date();
+	let units = "metric";
 	let apiKey = `a1bed3af7d71b323ab4af9036fcd943d`;
-	let apiUrl = `http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+	let apiUrl = `http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=${units}`;
 
 	axios.get(apiUrl).then(showWeather);
 	return (

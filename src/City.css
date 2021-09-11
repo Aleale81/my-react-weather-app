@@ -23,3 +23,8 @@
     font-family: "Times New Roman", Times, serif;
     color: rgb(61, 71, 112);
 }
+
+.City a {
+    color: rgb(7, 7, 155);
+    text-decoration: none;
+}
